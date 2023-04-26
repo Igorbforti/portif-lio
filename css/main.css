@@ -1,0 +1,49 @@
+.main-section {
+    background-color: #212126;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.welcome {
+    margin: 0;
+    color: #e4ecf0;
+}
+
+.main-name {
+    margin: 0;
+    font-size: 40px;
+    color: #5988a0;
+}
+
+.function-names {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.function-names > li > a {
+    text-decoration: none;
+    color: #e4ecf0;
+}
+
+.function-names > li:before {
+    content: "\2022";
+    color: #e4ecf0;
+    margin-right: 10px;
+}
+
+.main-info-right {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    padding-bottom: 0px;
+    height: 300px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 265px;
+}
