@@ -1,0 +1,12 @@
+.contact-section { 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #35343c;
+}
+
+.contact-section > a > img {
+    width: 40px;
+}

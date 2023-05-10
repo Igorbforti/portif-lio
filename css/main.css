@@ -2,11 +2,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: #e4ecf0;
+}
+
+body {
+    background-color: #212126;
 }
 
 .main-section {
-    background-color: #212126;
-
     display: flex;
     align-items: center;
     padding: 30px 350px;
@@ -15,7 +18,6 @@
 
 .welcome {
     margin: 0;
-    color: #e4ecf0;
 }
 
 .main-name {
@@ -34,19 +36,16 @@
 
 .function-names > li > a {
     text-decoration: none;
-    color: #e4ecf0;
 }
 
 .function-names > li:before {
     content: "\2022";
-    color: #e4ecf0;
     margin-right: 10px;
 }
 
 .short-description {
     font-size: 18px;
     line-height: 1.25;
-    color: #e4ecf0;
 }
 
 .about-me-btn {
@@ -54,12 +53,10 @@
     text-decoration: none;
     border-radius: 5px;
     padding: 15px;
-    color: #e4ecf0;
     background-color: #5988a0;
 }
 
 .about-me-btn:hover {
-    color: #bdc4c7;
     background-color: #325769;
 }
 
@@ -81,8 +78,8 @@
     padding: 0px 170px;
     justify-content: space-between;
     height: 512px;
+    border-bottom: 1px solid gray;
 
-    background: rgb(112,113,124);
     background: linear-gradient(0deg, rgba(112,113,124,1) 0%, rgba(33,33,38,1) 100%);
 }
 
@@ -98,28 +95,78 @@
     width: 800px;
 }
 
-.about-me-section > h1 {
-    color: #e4ecf0;
-}
-
 .about-me-section > h2 {
     color: #5988a0;
 }
 
 .about-me-section > article {
-    color: #e4ecf0;
     line-height: 2;
 }
 
 .about-me-section > a {
-    color: #8b0000;
+    color: #5988a0;
+    text-decoration: none;
+}
+
+.about-me-section > a:hover {
+    color: #2a4857;
 }
 
 .experience-container {
-    border-top: 1px solid gray;
     height: 100%;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
+    padding: 30px 0;
+    background: linear-gradient(0deg, rgba(33,33,38,1) 0%, rgba(112,113,124,1) 100%);
+}
+
+.experience-card {
+    width: 300px;
+    height: 400px;
+    background-color: #5988a0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.experience-card > h3 {
+    font-size: 28px;
+}
+
+.experience-card > h4 {
+    font-size: 20px;
+}
+
+.experience-card > p {
+    line-height: 1.75;
+}
+
+.skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container {
+    background-color: #5988a0;
+    border-radius: 10px;
+    width: 760px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.skills-title {
+    text-align: center;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px;
+    gap: 5px;
 }
