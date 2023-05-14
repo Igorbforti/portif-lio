@@ -10,14 +10,13 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
 <body>
-    <header>
+    <header id="section1">
         <div class="header">
             <h1 class="title">Igor</h1>
             <nav class="header-menu">
-                <a href="" class="header-item">Home</a>
-                <a href="" class="header-item">About me</a>
-                <a href="" class="header-item">Pages</a>
-                <a href="" class="header-item">Contact</a>
+                <a href="#section2" class="header-item">About me</a>
+                <a href="#section3" class="header-item">Skills</a>
+                <a href="#section4" class="header-item">Contact</a>
             </nav>
         </div>
     </header>
@@ -27,19 +26,19 @@
                 <p class="welcome">Hey, welcome to my profile, I am...</p>
                 <h1 class="main-name">Igor Bonuzzi Forti</h1>
                 <ul class="function-names">
-                    <li><a href="">Web Developer</a></li>
-                    <li><a href="">VTEX IO/CMS Developer</a></li>
+                    <li>Web Developer</li>
+                    <li>VTEX IO/CMS Developer</li>
                 </ul>
                 <article>
                     <p class="short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam, modi incidunt impedit ab odit totam, repellat enim, tempora ad facere eum itaque nisi voluptas voluptatem rerum quidem mollitia neque.</p>
                 </article>
-                <a href="" class="about-me-btn">About Me</a>
+                <a href="https://github.com/Igorbforti" target="__blank" class="about-me-btn">Projects</a>
             </div>            
             <div class="main-info-right">
                 <img src="../assets/foto1.png" alt="" class="profile-img">
             </div>
         </section>
-        <section class="about-section">
+        <section id="section2" class="about-section">
             <div class="about-container">
                 <div class="about-image">
                     <img src="../assets/foto2.png" alt="">
@@ -52,7 +51,8 @@
                     </article>
                 </div>
             </div>
-
+            
+            <h1 style="font-size: 2em; text-align: center; background-color: #70717c; margin: 0; padding-top: 15px;">Experience</h1>
             <div class="experience-container">
                 <div class="experience-card">
                     <h3>Microsoft</h3>
@@ -66,72 +66,78 @@
                 </div>
             </div>
         </section>
-        <section class="skills-section">
+        <h1 style="text-align: center;">Skills</h1>
+        <section id="section3" class="skills-section">
             <div class="skills-container">
-                <div class="skills-icons">
-                    <figure>
+                <div>
+                    <figure class="skill-icon">
                         <img src="../assets/html.png" alt="HTML">
-                        <div><span></span></div>
+                        <div class="skill-input"><input type="range" value="100" list="values" disabled>100%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/css.png" alt="CSS">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="100" list="values" disabled>100%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/js.png" alt="JAVASCRIPT">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="75" list="values" disabled>75%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/git.png" alt="GIT">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="50" list="values" disabled>50%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/react.png" alt="REACT.JS">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="50" list="values" disabled>50%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/node.png" alt="NODE.JS">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="75" list="values" disabled>75%</div>
                     </figure>
                 </div>
-                <div class="skills-icons">
-                    <figure>
+                <div class="skills-icon">
+                    <figure class="skill-icon">
                         <img src="../assets/sass.png" alt="SASS">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="75" list="values" disabled>75%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/tailwind.png" alt="TAILWINDCSS">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="25" list="values" disabled>25%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/java.png" alt="JAVA">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="25" list="values" disabled>25%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/mysql.png" alt="MYSQL">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="50" list="values" disabled>50%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/mongodb.png" alt="MONGODB">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="25" list="values" disabled>25%</div>
                     </figure>
-                    <figure>
+                    <figure class="skill-icon">
                         <img src="../assets/android.png" alt="ANDROID">
-                        <div></div>
+                        <div class="skill-input"><input type="range" value="50" list="values" disabled>50%</div>
                     </figure>
                 </div>
+                <datalist id="values">
+                    <option value="0" label="0"></option>
+                    <option value="25" label="25"></option>
+                    <option value="50" label="50"></option>
+                    <option value="75" label="75"></option>
+                    <option value="100" label="100"></option>
+                </datalist>
             </div>
         </section>
-        <div class="project-section">
-            <a href="">My projects</a>
-        </div>
+        <a href="#section1" class="arrow-up"></a>
     </main>
-    <footer>
+    <footer id="section4">
         <div class="contact-section">
             <a href=""><img src="../assets/facebook.png" alt="facebook"></a>
             <a href=""><img src="../assets/gmail.png" alt="gmail"></a>
             <a href=""><img src="../assets/linkedin.png" alt="linkedin"></a>
-            <a href=""><img src="../assets/github.png" alt="github"></a>
+            <a href="https://github.com/Igorbforti"><img src="../assets/github.png" alt="github"></a>
             <a href=""><img src="../assets/wpp.png" alt="wpp"></a>
         </div>
     </footer>

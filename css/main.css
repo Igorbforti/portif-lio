@@ -109,7 +109,7 @@ body {
 }
 
 .about-me-section > a:hover {
-    color: #2a4857;
+    color: #689bb5;
 }
 
 .experience-container {
@@ -147,10 +147,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .skills-container {
-    background-color: #5988a0;
+    background-color: #3e6375;
     border-radius: 10px;
     width: 760px;
 
@@ -158,15 +159,44 @@ body {
     justify-content: center;
 }
 
+.skills-container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 5px;
+}
+
 .skills-title {
     text-align: center;
 }
 
-.skills-icons {
+.skill-icon, .skill-input {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 50px;
+    align-items: center;
     gap: 5px;
+}
+
+.arrow-up {
+    background-color: #5988a0;
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+
+.arrow-up:hover {
+    background-color: #689bb5;
+}
+
+.arrow-up::after {
+    content: '';
+    background-image: url(../assets/arrow-up.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    top: 4px;
 }
